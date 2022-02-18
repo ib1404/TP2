@@ -10,6 +10,44 @@ public class Main {
         //parite();
         //max();
         //min();
+        //egaliteStr();
+        factorielle();
+
+    }
+
+    public static void factorielle() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Saisir un entier positif ou nul");
+
+        int n = scanner.nextInt();
+        int factorielle = 1;
+
+        for (int i = 1; i <= n; i++) {
+            factorielle *= i;
+        }
+        System.out.println(n + "! = " + factorielle);
+    }
+
+
+
+
+
+    public static void egaliteStr(){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Entrer une première chaîne de caractère : ");
+        String premiereChaine = scanner.nextLine();
+
+        System.out.println("Entrer une deuxième chaîne de caractère : ");
+        String deuxiemeChaine = scanner.nextLine();
+
+        boolean test = (premiereChaine.equals(deuxiemeChaine));
+
+        if (test == true){
+            System.out.println("Les chaînes de caractères sont identiques.");
+        }else {
+            System.out.println("Les chaînes de caractères ne sont pas identiques.");
+        }
     }
 
     public static void min(){
