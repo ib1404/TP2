@@ -6,7 +6,55 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        discriminant();
+        //discriminant();
+        //parite();
+        //max();
+        //min();
+    }
+
+    public static void min(){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Entrer un nombre x : ");
+        int x = scanner.nextInt();
+
+        System.out.println("Entrer un nombre y : ");
+        int y = scanner.nextInt();
+
+        if (x-y<0){
+            System.out.println("La valeur minimum est "+x);
+        }else{
+            System.out.println("La valeur minimum est "+y);
+        }
+    }
+
+    public static void max(){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Entrer un nombre x : ");
+        int x = scanner.nextInt();
+
+        System.out.println("Entrer un nombre y : ");
+        int y = scanner.nextInt();
+
+        if (x-y<0){
+            System.out.println("La valeur maximum est "+y);
+        }else{
+            System.out.println("La valeur maximum est "+x);
+        }
+    }
+
+    public static void parite() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Quelle est la valeur à tester ?");
+        int x = scanner.nextInt();
+
+        if (x%2==0){
+            System.out.println(x + " est pair");
+        }else {
+            System.out.println(x + " est impair");
+        }
     }
 
     public static void discriminant() {
